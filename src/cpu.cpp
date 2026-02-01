@@ -37,6 +37,6 @@ double get_cpu_usage(){
     prev=now;
     if(total_diff==0){
         return 0.0;
-    };
+    }
 return 100.0 * (total_diff-idle_diff)/total_diff;
 }
