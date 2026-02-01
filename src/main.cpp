@@ -1,6 +1,6 @@
 #include <ncurses.h>
 #include <unistd.h>
-
+#include "cpu.hpp"
 int main() {
   initscr();
   noecho();
@@ -9,7 +9,8 @@ int main() {
   while (true) {
     clear();
     mvprintw(1, 2, "leafmon");
-    mvprintw(3, 2, "CPU --");
+    double cpu=get_cpu_usage();
+    mvprintw(3, 2, "CPU :%.1f %%",cpu);
     mvprintw(5, 2, "MEM --");
     mvprintw(7, 2, "Press q to quit");
 
