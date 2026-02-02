@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = true
+[remote "origin"]
+	url = https://github.com/MridulSharma2552007/leafmon.git
+	tagOpt = --no-tags
+	fetch = +refs/*:refs/*
+	mirror = true
+[branch "main"]
+	gk-last-accessed = 2026-02-01T16:18:55.274Z
